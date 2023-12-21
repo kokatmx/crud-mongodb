@@ -1,0 +1,54 @@
+GET http://localhost:3001/barang
+###
+POST  http://localhost:3001/barang/find
+Content-Type: application/json
+
+{
+    "nama":"Mouse"
+}
+###
+POST http://localhost:3001/barang
+Content-Type: application/json
+
+{
+    "nama":"Mouse",
+    "deskripsi":"Menggerakkan pointer"
+}
+###
+PUT http://localhost:3000/barang
+Content-Type: application/json
+
+{
+    "namaLama":"Mouse",
+    "namaBaru":"Mouse Halo",
+    "deskripsiBaru":"Menggerakkan pointerr"
+}
+###
+DELETE http://localhost:3000/barang
+Content-Type: application/json
+
+{
+    "nama":"Mouse",
+    "deskripsi":"Menggerakkan pointer"
+}
+###
+POST http://localhost:3001/register
+Content-Type: application/json
+
+{
+    "name":"User",
+    "username":"user",
+    "password":"user123",
+    "role":"user",
+    "email":"user@example.com"
+}
+###
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "username":"user",
+    "password":"user123"
+}
+###
+GET http://localhost:3001/logout
